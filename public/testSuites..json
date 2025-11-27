@@ -1,0 +1,795 @@
+[
+    { 
+      "name": "Tests\\Unit\\MailPitTest", 
+      "total": 2, 
+      "passed": 1, 
+      "failed": 1, 
+      "skipped": 0,
+      "tests": [
+        { "name": "mailpit: test d'envoi", "status": "failed" },
+        { "name": "mailpit: test fetch mails", "status": "passed" }
+      ]
+    },
+    { 
+      "name": "BaseClientTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0,
+      "tests": [
+        { "name": "delete model from mode detail", "status": "failed" },
+        { "name": "titre page", "status": "failed" },
+        { "name": "breadcrumbs", "status": "failed" },
+        { "name": "localmenu", "status": "failed" }
+      ]
+    },
+    { 
+      "name": "ClientCrudTest", 
+      "total": 36, 
+      "passed": 13, 
+      "failed": 19, 
+      "skipped": 4,
+      "tests": [
+        { "name": "Mode create front data → LocalMenu", "status": "failed" },
+        { "name": "authentification du session sur le navigateur", "status": "passed" },
+        { "name": "Mode view → Faker Organisation", "status": "passed" },
+        { "name": "Mode view → Création", "status": "failed" },
+        { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "failed" },
+        { "name": "Mode view → Mise à jour", "status": "failed" },
+        { "name": "Mode view → Suppression", "status": "failed" },
+        { "name": "Mode liste actions → Faker items pour test", "status": "failed" },
+        { "name": "Mode liste actions → Ajouter", "status": "failed" },
+        { "name": "Mode liste actions → Row dropdown → Consulter", "status": "failed" },
+        { "name": "Mode liste actions → Row dropdown → Modifier", "status": "failed" },
+        { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "failed" },
+        { "name": "Mode liste actions → Click row / Consulter", "status": "failed" },
+        { "name": "Mode liste actions → Bulk → Supprimer", "status": "failed" },
+        { "name": "Mode liste front data → Faker création items", "status": "failed" },
+        { "name": "Mode liste front data → HopTable → Vérifier l'existence headers", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Passer à la page suivante", "status": "failed" },
+        { "name": "Mode liste front data → HopTable → Revenir à la page précédente", "status": "failed" },
+        { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "failed" },
+        { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "failed" },
+        { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ", "status": "failed" },
+        { "name": "Mode liste front data → HopTable → Recherche", "status": "failed" },
+        { "name": "Mode liste front data → Breadcrumbs", "status": "passed" },
+        { "name": "Mode liste front data → Local Menu", "status": "passed" },
+        { "name": "Mode liste front data → TitrePage", "status": "passed" },
+        { "name": "Mode view front data → TitrePage", "status": "failed" },
+        { "name": "Mode view front data → Breadcrumbs", "status": "failed" },
+        { "name": "Mode view front data → LocalMenu", "status": "passed" },
+        { "name": "Mode edit front data → TitrePage", "status": "failed" },
+        { "name": "Mode edit front data → Breadcrumbs", "status": "failed" },
+        { "name": "Mode edit front data → LocalMenu", "status": "passed" },
+        { "name": "Mode create front data → TitrePage", "status": "passed" },
+        { "name": "Mode create front data → Breadcrumbs", "status": "passed" },
+        { "name": "Mode create front data → LocalMenu", "status": "passed" }
+      ]
+    },
+    { 
+      "name": "BaseInstanceTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0,
+      "tests": [
+        { "name": "delete model from mode detail", "status": "failed" },
+        { "name": "titre page", "status": "failed" },
+        { "name": "breadcrumbs", "status": "failed" },
+        { "name": "localmenu", "status": "failed" }
+      ]
+    },
+    { 
+      "name": "InstanceBusinessTest", 
+      "total": 4, 
+      "passed": 1, 
+      "failed": 2, 
+      "skipped": 1,
+      "tests": [
+        { "name": "authentification du session sur le navigateur", "status": "passed" },
+        { "name": "Création Master instance", "status": "failed" },
+        { "name": "Vérifier Associé l'instance aux client", "status": "skipped" },
+        { "name": "Vérifier copy de base de donnée", "status": "skipped" }
+      ]
+    },
+    { 
+      "name": "InstanceCrudTest", 
+      "total": 37, 
+      "passed": 3, 
+      "failed": 32, 
+      "skipped": 2,
+      "tests": [
+        { "name": "authentification du session sur le navigateur", "status": "passed" },
+        { "name": "Mode view → Faker Client", "status": "failed" },
+        { "name": "Mode view → Création Master instance", "status": "failed" },
+        { "name": "Mode liste front data → Breadcrumbs", "status": "passed" },
+        { "name": "Mode liste front data → Local Menu", "status": "passed" },
+        { "name": "Mode create front data → TitrePage", "status": "passed" },
+        { "name": "Mode create front data → Breadcrumbs", "status": "passed" }
+      ]
+    },
+    { 
+      "name": "ProviderBusinessTest", 
+      "total": 10, 
+      "passed": 1, 
+      "failed": 8, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "ProviderCrudTest", 
+      "total": 32, 
+      "passed": 11, 
+      "failed": 20, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseDelegationTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "DelegationCrudTest", 
+      "total": 33, 
+      "passed": 22, 
+      "failed": 8, 
+      "skipped": 3, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseRoleTest", 
+      "total": 7, 
+      "passed": 0, 
+      "failed": 7, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "RoleCrudTest", 
+      "total": 28, 
+      "passed": 19, 
+      "failed": 8, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "RolePermissionsTest", 
+      "total": 6, 
+      "passed": 1, 
+      "failed": 1, 
+      "skipped": 4, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseTeamTest", 
+      "total": 7, 
+      "passed": 0, 
+      "failed": 7, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "TeamCrudTest", 
+      "total": 36, 
+      "passed": 27, 
+      "failed": 8, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "LoginCrudTest", 
+      "total": 4, 
+      "passed": 4, 
+      "failed": 0, 
+      "skipped": 0,
+      "tests": [
+        { "name": "Accéder à la page de connexion", "status": "passed" },
+        { "name": "L'utilisateur ne peut pas se connecter avec des identifiants invalides", "status": "passed" },
+        { "name": "Se connecter avec des identifiants valides", "status": "passed" },
+        { "name": "Afficher la page « mot de passe oublié »", "status": "passed" }
+      ]
+    },
+    { 
+      "name": "NewPasswordTest", 
+      "total": 3, 
+      "passed": 0, 
+      "failed": 3, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "ResetPasswordTest", 
+      "total": 5, 
+      "passed": 3, 
+      "failed": 2, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseUserTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "UserBusinessTest", 
+      "total": 9, 
+      "passed": 3, 
+      "failed": 5, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "UserCrudTest", 
+      "total": 30, 
+      "passed": 6, 
+      "failed": 23, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseUserDelegationDonneeTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseUserDelegationRecueTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseUserDelegationTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "UserDelegationDonneeCrudTest", 
+      "total": 25, 
+      "passed": 3, 
+      "failed": 21, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "UserDelegationRecueCrudTest", 
+      "total": 25, 
+      "passed": 3, 
+      "failed": 21, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseProviderTest", 
+      "total": 7, 
+      "passed": 0, 
+      "failed": 7, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseWebhookTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "WebhookCrudTest", 
+      "total": 33, 
+      "passed": 1, 
+      "failed": 31, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseVueDashboardTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "VueDashboardCrudTest", 
+      "total": 37, 
+      "passed": 6, 
+      "failed": 30, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseDesignDashboardTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseDesignDetailTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseDesignListTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "DesignDashboardTest", 
+      "total": 8, 
+      "passed": 1, 
+      "failed": 6, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "DesignDetailTest", 
+      "total": 18, 
+      "passed": 1, 
+      "failed": 16, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "DesignListTest", 
+      "total": 13, 
+      "passed": 1, 
+      "failed": 11, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseVueDetailTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "VueDetailCrudTest", 
+      "total": 38, 
+      "passed": 7, 
+      "failed": 30, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseVueListTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "VueListCrudTest", 
+      "total": 39, 
+      "passed": 8, 
+      "failed": 30, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseFormulaireTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "FormulaireCrudTest", 
+      "total": 32, 
+      "passed": 3, 
+      "failed": 28, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseDeviseTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "DeviseCrudTest", 
+      "total": 32, 
+      "passed": 7, 
+      "failed": 24, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseLangueTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "LangueCrudTest", 
+      "total": 32, 
+      "passed": 7, 
+      "failed": 24, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BasePaysTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "PaysCrudTest", 
+      "total": 32, 
+      "passed": 7, 
+      "failed": 24, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseExpediteurTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "ExpediteurBusinessTest", 
+      "total": 7, 
+      "passed": 3, 
+      "failed": 3, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "ExpediteurCrudTest", 
+      "total": 30, 
+      "passed": 8, 
+      "failed": 21, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseMessagerieTest", 
+      "total": 5, 
+      "passed": 0, 
+      "failed": 5, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "MetriqueCrudTest", 
+      "total": 32, 
+      "passed": 27, 
+      "failed": 4, 
+      "skipped": 1, 
+      "tests": [
+        { "name": "authentification du session sur le navigateur", "status": "passed" },
+        { "name": "Mode view → Création", "status": "passed" },
+        { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "passed" },
+        { "name": "Mode view → Mise à jour", "status": "passed" },
+        { "name": "Mode view → Suppression", "status": "passed" },
+        { "name": "Mode liste actions → Création items pour test", "status": "passed" },
+        { "name": "Mode liste actions → Ajouter", "status": "passed" },
+        { "name": "Mode liste actions → Row dropdown → Consulter", "status": "passed" },
+        { "name": "Mode liste actions → Row dropdown → Modifier", "status": "failed" },
+        { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "passed" },
+        { "name": "Mode liste actions → Click row → Consulter", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Faker création items", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Vérifier l'existence headers", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Passer à la page suivante", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Revenir à la page précédente", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Recherche", "status": "failed" },
+        { "name": "Mode liste front data → Breadcrumbs", "status": "passed" },
+        { "name": "Mode liste front data → TitrePage", "status": "passed" },
+        { "name": "Mode liste front data → Local Menu", "status": "passed" },
+        { "name": "Mode view front data → Breadcrumbs", "status": "passed" },
+        { "name": "Mode view front data → TitrePage", "status": "passed" },
+        { "name": "Mode view front data → Local Menu", "status": "passed" },
+        { "name": "Mode edit front data → Breadcrumbs", "status": "passed" },
+        { "name": "Mode edit front data → TitrePage", "status": "passed" },
+        { "name": "Mode edit front data → Local Menu", "status": "passed" },
+        { "name": "Mode create front data → Breadcrumbs", "status": "passed" },
+        { "name": "Mode create front data → TitrePage", "status": "passed" },
+        { "name": "Mode create front data → LocalMenu", "status": "skipped" }
+      ]
+    },
+    { 
+      "name": "BaseObjectifTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "ObjectifCrudTest", 
+      "total": 36, 
+      "passed": 9, 
+      "failed": 26, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BasePeriodeTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "PeriodeCrudTest", 
+      "total": 29, 
+      "passed": 23, 
+      "failed": 5, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseCampagneTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "CampagneCrudTest", 
+      "total": 21, 
+      "passed": 3, 
+      "failed": 16, 
+      "skipped": 2, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseChampTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "ChampCrudTest", 
+      "total": 28, 
+      "passed": 13, 
+      "failed": 14, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseConditionTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "ConditionCrudTest", 
+      "total": 32, 
+      "passed": 21, 
+      "failed": 8, 
+      "skipped": 3, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseEntiteTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "EntiteCrudTest", 
+      "total": 38, 
+      "passed": 5, 
+      "failed": 32, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseGroupTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "GroupCrudTest", 
+      "total": 36, 
+      "passed": 28, 
+      "failed": 7, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseModuleTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "ModuleCrudTest", 
+      "total": 33, 
+      "passed": 7, 
+      "failed": 25, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "BasePuzzleTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "PuzzleCrudTest", 
+      "total": 33, 
+      "passed": 23, 
+      "failed": 7, 
+      "skipped": 3, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseRelationTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "RelationCrudTest", 
+      "total": 33, 
+      "passed": 25, 
+      "failed": 6, 
+      "skipped": 2, 
+      "tests": [] 
+    },
+    { 
+      "name": "SourceCrudTest", 
+      "total": 28, 
+      "passed": 28, 
+      "failed": 0, 
+      "skipped": 0, 
+      "tests": [
+        { "name": "authentification du session sur le navigateur", "status": "passed" },
+        { "name": "Mode view → Création", "status": "passed" },
+        { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "passed" },
+        { "name": "Mode view → Mise à jour", "status": "passed" },
+        { "name": "Mode view → Suppression", "status": "passed" },
+        { "name": "Mode liste actions → Création items pour test", "status": "passed" },
+        { "name": "Mode liste actions → Ajouter", "status": "passed" },
+        { "name": "Mode liste actions → Click row / Consulter", "status": "passed" },
+        { "name": "Mode liste actions → Row dropdown → Consulter", "status": "passed" },
+        { "name": "Mode liste actions → Row dropdown → Modifier", "status": "passed" },
+        { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "passed" },
+        { "name": "Mode liste actions → Click row / Consulter", "status": "passed" },
+        { "name": "Mode liste actions → Bulk → Supprimer", "status": "passed" },
+        { "name": "Mode liste front data → création items", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Vérifier l'existence headers", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Passer à la page suivante", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Revenir à la page précédente", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ", "status": "passed" },
+        { "name": "Mode liste front data → HopTable → Recherche", "status": "passed" },
+        { "name": "TitrePage → Mode liste", "status": "passed" },
+        { "name": "TitrePage → Mode view", "status": "passed" },
+        { "name": "TitrePage → Mode create", "status": "passed" },
+        { "name": "Breadcrumbs → Mode liste", "status": "passed" },
+        { "name": "Breadcrumbs → Mode view", "status": "passed" },
+        { "name": "Breadcrumbs → Mode create", "status": "passed" },
+        { "name": "Local Menu", "status": "passed" }
+      ]
+    },
+    { 
+      "name": "BaseValeurTest", 
+      "total": 7, 
+      "passed": 0, 
+      "failed": 7, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "ValeurCrudTest", 
+      "total": 28, 
+      "passed": 21, 
+      "failed": 6, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "TemplateBuilderTest", 
+      "total": 8, 
+      "passed": 1, 
+      "failed": 5, 
+      "skipped": 2, 
+      "tests": [] 
+    },
+    { 
+      "name": "TemplateMailArchiveTest", 
+      "total": 29, 
+      "passed": 1, 
+      "failed": 27, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "TemplateMailCrudTest", 
+      "total": 34, 
+      "passed": 4, 
+      "failed": 29, 
+      "skipped": 1, 
+      "tests": [] 
+    },
+    { 
+      "name": "TemplateMailModelsTest", 
+      "total": 1, 
+      "passed": 1, 
+      "failed": 0, 
+      "skipped": 0, 
+      "tests": [
+        { "name": "authentification du session sur le navigateur", "status": "passed" }
+      ]
+    },
+    { 
+      "name": "BaseTemplateArchiveTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    },
+    { 
+      "name": "BaseTemplateTest", 
+      "total": 4, 
+      "passed": 0, 
+      "failed": 4, 
+      "skipped": 0, 
+      "tests": [] 
+    }
+  ]
