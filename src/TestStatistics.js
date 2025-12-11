@@ -55,9 +55,9 @@ const TestStatistics = ({ data }) => {
   };
 
   // Only show if data is provided
-  if (!data) {
-    return null;
-  }
+  // if (!data) {
+  //   return null;
+  // }
 
   return (
     <div className="bg-white rounded-lg shadow-lg p-8">
