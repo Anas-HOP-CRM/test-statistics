@@ -54,6 +54,11 @@ const TestStatistics = ({ data }) => {
     }
   };
 
+  // Only show if data is provided
+  if (!data) {
+    return null;
+  }
+
   return (
     <div className="bg-white rounded-lg shadow-lg p-8">
       <h1 className="text-3xl font-bold text-gray-900 mb-8">

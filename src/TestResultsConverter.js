@@ -261,10 +261,7 @@ export default function TestResultsConverter({ onDataParsed }) {
             </div>
           </div>
 
-          <div className="flex justify-between items-center mb-4">
-            <h2 className="text-lg font-bold text-gray-800">
-              Parsed Test Suites ({parsedData.length})
-            </h2>
+          <div className="flex justify-end">
             <button
               onClick={downloadDataJs}
               className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition-colors"
@@ -272,35 +269,6 @@ export default function TestResultsConverter({ onDataParsed }) {
               <Download className="w-4 h-4" />
               Download data.js
             </button>
-          </div>
-
-          <div className="space-y-3 max-h-96 overflow-y-auto">
-            {parsedData.map((suite, index) => (
-              <div
-                key={index}
-                className="border border-gray-200 rounded-lg p-3 text-sm"
-              >
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="font-medium text-gray-800">{suite.name}</h3>
-                  <div className="flex gap-2 text-xs">
-                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded">
-                      ✓ {suite.passed}
-                    </span>
-                    <span className="bg-red-100 text-red-800 px-2 py-1 rounded">
-                      ⨯ {suite.failed}
-                    </span>
-                    {suite.skipped > 0 && (
-                      <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded">
-                        ↓ {suite.skipped}
-                      </span>
-                    )}
-                  </div>
-                </div>
-                <div className="text-xs text-gray-600">
-                  {suite.tests.length} test{suite.tests.length !== 1 ? "s" : ""}
-                </div>
-              </div>
-            ))}
           </div>
         </>
       )}
