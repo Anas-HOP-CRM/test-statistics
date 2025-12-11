@@ -2,20 +2,20 @@ export const data = [
     {
         "name": "Tests\\Unit\\MailPitTest",
         "total": 2,
-        "passed": 0,
-        "failed": 2,
+        "passed": 1,
+        "failed": 1,
         "skipped": 0,
         "tests": [
             { "name": "mailpit: test d'envoi", "status": "failed" },
-            { "name": "mailpit: test fetch mails", "status": "failed" }
+            { "name": "mailpit: test fetch mails", "status": "passed" }
         ]
     },
     {
-        "name": "ClientCrudTest",
-        "total": 34,
-        "passed": 11,
-        "failed": 23,
-        "skipped": 0,
+        "name": "App\\HopFramework\\BackOffice\\Modules\\Clients\\Tests\\ClientCrudTest",
+        "total": 35,
+        "passed": 12,
+        "failed": 19,
+        "skipped": 4,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Faker Organisation", "status": "passed" },
@@ -53,7 +53,7 @@ export const data = [
         ]
     },
     {
-        "name": "InstanceBusinessTest",
+        "name": "App\\HopFramework\\BackOffice\\Modules\\Instances\\Tests\\InstanceBusinessTest",
         "total": 5,
         "passed": 1,
         "failed": 1,
@@ -67,10 +67,10 @@ export const data = [
         ]
     },
     {
-        "name": "InstanceCrudTest",
-        "total": 36,
-        "passed": 5,
-        "failed": 29,
+        "name": "App\\HopFramework\\BackOffice\\Modules\\Instances\\Tests\\InstanceCrudTest",
+        "total": 37,
+        "passed": 3,
+        "failed": 32,
         "skipped": 2,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -106,16 +106,16 @@ export const data = [
             { "name": "Mode edit front data → TitrePage", "status": "failed" },
             { "name": "Mode edit front data → Breadcrumbs", "status": "failed" },
             { "name": "Mode edit front data → LocalMenu → Aucun LocalMenu", "status": "skipped" },
-            { "name": "Mode create front data → TitrePage", "status": "failed" },
+            { "name": "Mode create front data → TitrePage", "status": "passed" },
             { "name": "Mode create front data → Breadcrumbs", "status": "passed" },
             { "name": "Mode create front data → LocalMenu → Aucun LocalMenu", "status": "skipped" }
         ]
     },
     {
-        "name": "ProviderBusinessTest",
-        "total": 10,
+        "name": "App\\HopFramework\\CoreApplication\\Config\\Tests\\Provider\\ProviderBusinessTest",
+        "total": 11,
         "passed": 1,
-        "failed": 8,
+        "failed": 9,
         "skipped": 1,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -132,10 +132,10 @@ export const data = [
         ]
     },
     {
-        "name": "ProviderCrudTest",
-        "total": 29,
-        "passed": 11,
-        "failed": 15,
+        "name": "App\\HopFramework\\CoreApplication\\Config\\Tests\\Provider\\ProviderCrudTest",
+        "total": 31,
+        "passed": 8,
+        "failed": 20,
         "skipped": 3,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -144,7 +144,7 @@ export const data = [
             { "name": "Mode view → Mise à jour", "status": "failed" },
             { "name": "Mode view → Suppression", "status": "failed" },
             { "name": "Mode liste actions → Création items pour test", "status": "passed" },
-            { "name": "Mode liste actions → Ajouter", "status": "passed" },
+            { "name": "Mode liste actions → Ajouter", "status": "failed" },
             { "name": "Mode liste actions → Row dropdown → Consulter", "status": "failed" },
             { "name": "Mode liste actions → Row dropdown → Modifier", "status": "failed" },
             { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "failed" },
@@ -170,16 +170,16 @@ export const data = [
         ]
     },
     {
-        "name": "DelegationCrudTest",
-        "total": 33,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\Delegation\\DelegationCrudTest",
+        "total": 35,
         "passed": 23,
-        "failed": 4,
-        "skipped": 6,
+        "failed": 3,
+        "skipped": 9,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création", "status": "passed" },
             { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "passed" },
-            { "name": "Mode view → Mise à jour", "status": "failed" },
+            { "name": "Mode view → Mise à jour", "status": "passed" },
             { "name": "Mode view → Suppression", "status": "passed" },
             { "name": "Mode liste actions → Création items pour test", "status": "passed" },
             { "name": "Mode liste actions → Ajouter", "status": "passed" },
@@ -192,7 +192,7 @@ export const data = [
             { "name": "Mode liste front data → HopTable → Vérifier l'existence headers", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Passer à la page suivante", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Revenir à la page précédente", "status": "passed" },
-            { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "failed" },
+            { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ", "status": "failed" },
             { "name": "Mode liste front data → HopTable → Recherche", "status": "failed" },
@@ -211,10 +211,10 @@ export const data = [
         ]
     },
     {
-        "name": "RoleCrudTest",
-        "total": 29,
-        "passed": 20,
-        "failed": 9,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\Role\\RoleCrudTest",
+        "total": 31,
+        "passed": 23,
+        "failed": 8,
         "skipped": 0,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -225,7 +225,7 @@ export const data = [
             { "name": "Mode liste actions → Création items pour test", "status": "passed" },
             { "name": "Mode liste actions → Ajouter", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Consulter", "status": "passed" },
-            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "failed" },
+            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "passed" },
             { "name": "Mode liste actions → Click row / Consulter", "status": "passed" },
             { "name": "Mode liste actions → Bulk → Supprimer", "status": "passed" },
@@ -233,7 +233,7 @@ export const data = [
             { "name": "Mode liste front data → HopTable → Vérifier l'existence headers", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Passer à la page suivante", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Revenir à la page précédente", "status": "passed" },
-            { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "failed" },
+            { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Recherche", "status": "failed" },
@@ -248,7 +248,7 @@ export const data = [
         ]
     },
     {
-        "name": "RolePermissionsTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\Role\\RolePermissionsTest",
         "total": 6,
         "passed": 1,
         "failed": 1,
@@ -263,11 +263,11 @@ export const data = [
         ]
     },
     {
-        "name": "TeamCrudTest",
-        "total": 34,
-        "passed": 22,
-        "failed": 7,
-        "skipped": 5,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\Team\\TeamCrudTest",
+        "total": 36,
+        "passed": 26,
+        "failed": 8,
+        "skipped": 2,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création", "status": "passed" },
@@ -302,11 +302,12 @@ export const data = [
             { "name": "Permissions d'une équipe → Champ d'une entité", "status": "failed" },
             { "name": "Permissions d'une équipe → Modifications de toutes les permissions d'un module", "status": "failed" },
             { "name": "Permissions d'une équipe → Modules", "status": "failed" },
-            { "name": "Permissions d'une équipe → Sources", "status": "failed" }
+            { "name": "Permissions d'une équipe → Sources", "status": "failed" },
+            { "name": "Permissions d'une équipe → Sources", "status": "skipped" }
         ]
     },
     {
-        "name": "LoginCrudTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\User\\Login\\LoginCrudTest",
         "total": 4,
         "passed": 4,
         "failed": 0,
@@ -319,7 +320,7 @@ export const data = [
         ]
     },
     {
-        "name": "NewPasswordTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\User\\Login\\NewPasswordTest",
         "total": 3,
         "passed": 0,
         "failed": 3,
@@ -331,7 +332,7 @@ export const data = [
         ]
     },
     {
-        "name": "ResetPasswordTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\User\\Login\\ResetPasswordTest",
         "total": 5,
         "passed": 3,
         "failed": 2,
@@ -345,10 +346,10 @@ export const data = [
         ]
     },
     {
-        "name": "UserBusinessTest",
-        "total": 8,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\User\\User\\UserBusinessTest",
+        "total": 9,
         "passed": 3,
-        "failed": 5,
+        "failed": 6,
         "skipped": 0,
         "tests": [
             { "name": "Création d'un nouvel utilisateur", "status": "passed" },
@@ -363,10 +364,10 @@ export const data = [
         ]
     },
     {
-        "name": "UserCrudTest",
-        "total": 29,
-        "passed": 6,
-        "failed": 22,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\User\\User\\UserCrudTest",
+        "total": 31,
+        "passed": 7,
+        "failed": 23,
         "skipped": 1,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -401,11 +402,11 @@ export const data = [
         ]
     },
     {
-        "name": "UserDelegationDonneeCrudTest",
-        "total": 25,
-        "passed": 3,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\User\\UserDelegation\\UserDelegationDonneeCrudTest",
+        "total": 27,
+        "passed": 4,
         "failed": 21,
-        "skipped": 1,
+        "skipped": 2,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création d'une délégation", "status": "passed" },
@@ -435,11 +436,11 @@ export const data = [
         ]
     },
     {
-        "name": "UserDelegationRecueCrudTest",
-        "total": 25,
-        "passed": 3,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Acl\\Tests\\User\\UserDelegation\\UserDelegationRecueCrudTest",
+        "total": 27,
+        "passed": 4,
         "failed": 21,
-        "skipped": 1,
+        "skipped": 2,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création d'une délégation", "status": "passed" },
@@ -469,11 +470,11 @@ export const data = [
         ]
     },
     {
-        "name": "WebhookCrudTest",
-        "total": 33,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Config\\Tests\\Webhook\\WebhookCrudTest",
+        "total": 35,
         "passed": 1,
-        "failed": 25,
-        "skipped": 7,
+        "failed": 30,
+        "skipped": 4,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création", "status": "failed" },
@@ -511,10 +512,10 @@ export const data = [
         ]
     },
     {
-        "name": "VueDashboardCrudTest",
-        "total": 36,
-        "passed": 10,
-        "failed": 25,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Design\\Tests\\Dashboard\\VueDashboardCrudTest",
+        "total": 38,
+        "passed": 7,
+        "failed": 30,
         "skipped": 1,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -555,10 +556,10 @@ export const data = [
         ]
     },
     {
-        "name": "DesignDashboardTest",
-        "total": 7,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Design\\Tests\\Design\\DesignDashboardTest",
+        "total": 8,
         "passed": 1,
-        "failed": 6,
+        "failed": 7,
         "skipped": 0,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -572,10 +573,10 @@ export const data = [
         ]
     },
     {
-        "name": "DesignDetailTest",
-        "total": 19,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Design\\Tests\\Design\\DesignDetailTest",
+        "total": 18,
         "passed": 1,
-        "failed": 18,
+        "failed": 17,
         "skipped": 0,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -599,7 +600,7 @@ export const data = [
         ]
     },
     {
-        "name": "DesignListTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Design\\Tests\\Design\\DesignListTest",
         "total": 13,
         "passed": 1,
         "failed": 12,
@@ -621,11 +622,11 @@ export const data = [
         ]
     },
     {
-        "name": "VueDetailCrudTest",
-        "total": 37,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Design\\Tests\\Detail\\VueDetailCrudTest",
+        "total": 41,
         "passed": 8,
-        "failed": 26,
-        "skipped": 3,
+        "failed": 29,
+        "skipped": 4,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Faker relation", "status": "passed" },
@@ -668,11 +669,11 @@ export const data = [
         ]
     },
     {
-        "name": "VueListCrudTest",
-        "total": 37,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Design\\Tests\\List\\VueListCrudTest",
+        "total": 41,
         "passed": 8,
-        "failed": 26,
-        "skipped": 3,
+        "failed": 29,
+        "skipped": 4,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Faker relation", "status": "passed" },
@@ -715,11 +716,11 @@ export const data = [
         ]
     },
     {
-        "name": "FormulaireCrudTest",
-        "total": 28,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Formulaire\Tests\\Formulaire\\FormulaireCrudTest",
+        "total": 34,
         "passed": 3,
-        "failed": 22,
-        "skipped": 3,
+        "failed": 27,
+        "skipped": 4,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création", "status": "failed" },
@@ -756,10 +757,10 @@ export const data = [
         ]
     },
     {
-        "name": "DeviseCrudTest",
-        "total": 30,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Localisation\\Tests\\Devise\\DeviseCrudTest",
+        "total": 34,
         "passed": 7,
-        "failed": 20,
+        "failed": 24,
         "skipped": 3,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -797,10 +798,10 @@ export const data = [
         ]
     },
     {
-        "name": "LangueCrudTest",
-        "total": 30,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Localisation\\Tests\\Lang\\LangueCrudTest",
+        "total": 34,
         "passed": 7,
-        "failed": 20,
+        "failed": 24,
         "skipped": 3,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -838,10 +839,10 @@ export const data = [
         ]
     },
     {
-        "name": "PaysCrudTest",
-        "total": 30,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Localisation\\Tests\\Pays\\PaysCrudTest",
+        "total": 34,
         "passed": 7,
-        "failed": 20,
+        "failed": 24,
         "skipped": 3,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -879,27 +880,26 @@ export const data = [
         ]
     },
     {
-        "name": "ExpediteurBusinessTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Messagerie\\Tests\\Expediteur\\ExpediteurBusinessTest",
         "total": 6,
         "passed": 3,
         "failed": 3,
-        "skipped": 1,
+        "skipped": 0,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Création expéditeur pour test", "status": "passed" },
             { "name": "create provider pour test", "status": "passed" },
             { "name": "Active provider pour l'expéditeur", "status": "failed" },
             { "name": "Désactiver provider pour l'expéditeur", "status": "failed" },
-            { "name": "validation e-mail BO", "status": "failed" },
-            { "name": "validation e-mail par provider → On peut pas test, Car pour tester on peut pas mettre host du mailpit.", "status": "skipped" }
+            { "name": "validation e-mail BO", "status": "failed" }
         ]
     },
     {
-        "name": "ExpediteurCrudTest",
-        "total": 28,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Messagerie\\Tests\\Expediteur\\ExpediteurCrudTest",
+        "total": 31,
         "passed": 8,
-        "failed": 18,
-        "skipped": 2,
+        "failed": 20,
+        "skipped": 3,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création", "status": "failed" },
@@ -933,21 +933,21 @@ export const data = [
         ]
     },
     {
-        "name": "MetriqueCrudTest",
-        "total": 32,
-        "passed": 28,
-        "failed": 3,
-        "skipped": 1,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Objectif\\Tests\\Metrique\\MetriqueCrudTest",
+        "total": 31,
+        "passed": 31,
+        "failed": 0,
+        "skipped": 0,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création", "status": "passed" },
             { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "passed" },
             { "name": "Mode view → Mise à jour", "status": "passed" },
-            { "name": "Mode view → Suppression", "status": "failed" },
+            { "name": "Mode view → Suppression", "status": "passed" },
             { "name": "Mode liste actions → Création items pour test", "status": "passed" },
             { "name": "Mode liste actions → Ajouter", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Consulter", "status": "passed" },
-            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "failed" },
+            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "passed" },
             { "name": "Mode liste actions → Click row → Consulter", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Faker création items", "status": "passed" },
@@ -957,7 +957,7 @@ export const data = [
             { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ", "status": "passed" },
-            { "name": "Mode liste front data → HopTable → Recherche", "status": "failed" },
+            { "name": "Mode liste front data → HopTable → Recherche", "status": "passed" },
             { "name": "Mode liste front data → Breadcrumbs", "status": "passed" },
             { "name": "Mode liste front data → TitrePage", "status": "passed" },
             { "name": "Mode liste front data → Local Menu", "status": "passed" },
@@ -969,15 +969,15 @@ export const data = [
             { "name": "Mode edit front data → Local Menu", "status": "passed" },
             { "name": "Mode create front data → Breadcrumbs", "status": "passed" },
             { "name": "Mode create front data → TitrePage", "status": "passed" },
-            { "name": "Mode create front data → LocalMenu → Aucun LocalMenu", "status": "skipped" }
+            { "name": "Mode create front data → LocalMenu", "status": "passed" }
         ]
     },
     {
-        "name": "ObjectifCrudTest",
-        "total": 34,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Objectif\\Tests\\Objectif\\ObjectifCrudTest",
+        "total": 35,
         "passed": 17,
-        "failed": 13,
-        "skipped": 4,
+        "failed": 15,
+        "skipped": 3,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Faker Période", "status": "passed" },
@@ -1012,14 +1012,14 @@ export const data = [
             { "name": "Mode edit front data → Local Menu → Aucun Local menu", "status": "skipped" },
             { "name": "Mode create front data → Breadcrumbs", "status": "passed" },
             { "name": "Mode create front data → TitrePage", "status": "passed" },
-            { "name": "Mode create front data → LocalMenu → Aucun LocalMenu", "status": "skipped" }
+            { "name": "Mode create front data → LocalMenu → Aucun LocalMenu", "status": "passed" }
         ]
     },
     {
-        "name": "PeriodeCrudTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Objectif\\Tests\\Periode\\PeriodeCrudTest",
         "total": 29,
-        "passed": 24,
-        "failed": 2,
+        "passed": 23,
+        "failed": 3,
         "skipped": 3,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -1030,7 +1030,7 @@ export const data = [
             { "name": "Mode liste actions → Création items pour test", "status": "passed" },
             { "name": "Mode liste actions → Ajouter", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Consulter", "status": "passed" },
-            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "failed" },
+            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "passed" },
             { "name": "Mode liste actions → Click row → Consulter", "status": "passed" },
             { "name": "Mode liste front data → HopTable → création items", "status": "passed" },
@@ -1053,10 +1053,10 @@ export const data = [
         ]
     },
     {
-        "name": "CampagneCrudTest",
-        "total": 20,
-        "passed": 4,
-        "failed": 14,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Structure\\Tests\\Campagne\\CampagneCrudTest",
+        "total": 21,
+        "passed": 3,
+        "failed": 16,
         "skipped": 2,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -1083,54 +1083,54 @@ export const data = [
         ]
     },
     {
-        "name": "ChampCrudTest",
-        "total": 28,
-        "passed": 6,
-        "failed": 20,
-        "skipped": 2,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Structure\\Tests\\Champ\\ChampCrudTest",
+        "total": 29,
+        "passed": 29,
+        "failed": 0,
+        "skipped": 0,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
-            { "name": "Mode view → Création", "status": "failed" },
-            { "name": "Mode view → Vérifie si la colonne est enregistrée dans l'entité", "status": "failed" },
-            { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "failed" },
-            { "name": "Mode view → Mise à jour", "status": "failed" },
-            { "name": "Mode view → Suppression", "status": "failed" },
-            { "name": "Champ actions → Création champs pour test", "status": "failed" },
+            { "name": "Mode view → Création", "status": "passed" },
+            { "name": "Mode view → Vérifie si la colonne est enregistrée dans l'entité", "status": "passed" },
+            { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "passed" },
+            { "name": "Mode view → Mise à jour", "status": "passed" },
+            { "name": "Mode view → Suppression", "status": "passed" },
+            { "name": "Champ actions → Création champs pour test", "status": "passed" },
             { "name": "Champ actions → Ajouter", "status": "passed" },
-            { "name": "Champ actions → Click row / Consulter", "status": "failed" },
-            { "name": "Champ actions → Row dropdown → Consulter", "status": "failed" },
-            { "name": "Champ actions → Row dropdown → Modifier", "status": "failed" },
+            { "name": "Champ actions → Click row / Consulter", "status": "passed" },
+            { "name": "Champ actions → Row dropdown → Consulter", "status": "passed" },
+            { "name": "Champ actions → Row dropdown → Modifier", "status": "passed" },
             { "name": "Champ actions → Row dropdown → Supprimer", "status": "passed" },
-            { "name": "Champ actions → Suppression multiple", "status": "failed" },
-            { "name": "Mode liste front data → création items", "status": "failed" },
+            { "name": "Champ actions → Suppression multiple", "status": "passed" },
+            { "name": "Mode liste front data → création items", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Vérifier l'existence headers", "status": "passed" },
-            { "name": "Mode liste front data → HopTable → Passer à la page suivante", "status": "failed" },
-            { "name": "Mode liste front data → HopTable → Revenir à la page précédente", "status": "failed" },
-            { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "failed" },
-            { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "failed" },
-            { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ → Aucun champ triable", "status": "skipped" },
-            { "name": "Mode liste front data → HopTable → Recherche", "status": "failed" },
+            { "name": "Mode liste front data → HopTable → Passer à la page suivante", "status": "passed" },
+            { "name": "Mode liste front data → HopTable → Revenir à la page précédente", "status": "passed" },
+            { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "passed" },
+            { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "passed" },
+            { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ", "status": "passed" },
+            { "name": "Mode liste front data → HopTable → Recherche", "status": "passed" },
             { "name": "Mode liste front data → TitrePage", "status": "passed" },
             { "name": "Mode liste front data → Breadcrumbs", "status": "passed" },
             { "name": "Mode liste front data → Local Menu", "status": "passed" },
-            { "name": "Mode edit front data → TitrePage", "status": "failed" },
+            { "name": "Mode edit front data → TitrePage", "status": "passed" },
             { "name": "Mode edit front data → Breadcrumbs", "status": "passed" },
-            { "name": "Mode edit front data → LocalMenu → Aucun local menu", "status": "skipped" }
+            { "name": "Mode edit front data → LocalMenu", "status": "passed" }
         ]
     },
     {
-        "name": "ConditionCrudTest",
-        "total": 29,
-        "passed": 24,
-        "failed": 3,
-        "skipped": 2,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Structure\\Tests\\Condition\\ConditionCrudTest",
+        "total": 30,
+        "passed": 30,
+        "failed": 0,
+        "skipped": 0,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Fake entité", "status": "passed" },
             { "name": "Fake puzzle", "status": "passed" },
-            { "name": "Mode view → Création", "status": "failed" },
-            { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "failed" },
-            { "name": "Mode view → Mise à jour", "status": "failed" },
+            { "name": "Mode view → Création", "status": "passed" },
+            { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "passed" },
+            { "name": "Mode view → Mise à jour", "status": "passed" },
             { "name": "Mode liste actions → Création items pour test", "status": "passed" },
             { "name": "Mode liste actions → Ajouter", "status": "passed" },
             { "name": "Mode liste actions → Click row / Consulter", "status": "passed" },
@@ -1150,79 +1150,79 @@ export const data = [
             { "name": "Mode liste front data → Local Menu", "status": "passed" },
             { "name": "Mode create front data → TitrePage", "status": "passed" },
             { "name": "Mode create front data → Breadcrumbs", "status": "passed" },
-            { "name": "Mode create front data → LocalMenu → Aucun local menu", "status": "skipped" },
+            { "name": "Mode create front data → LocalMenu", "status": "passed" },
             { "name": "Mode edit front data → TitrePage", "status": "passed" },
             { "name": "Mode edit front data → Breadcrumbs", "status": "passed" },
-            { "name": "Mode edit front data → LocalMenu → Aucun local menu", "status": "skipped" }
+            { "name": "Mode edit front data → LocalMenu", "status": "passed" }
         ]
     },
     {
-        "name": "EntiteCrudTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Structure\\Tests\\Entite\\EntiteCrudTest",
         "total": 38,
-        "passed": 5,
-        "failed": 32,
-        "skipped": 1,
+        "passed": 38,
+        "failed": 0,
+        "skipped": 0,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
-            { "name": "Mode view → Création", "status": "failed" },
-            { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "failed" },
-            { "name": "Mode view → Vérifier la génération de la Table", "status": "failed" },
-            { "name": "Mode view → Vérifier la génération du Model", "status": "failed" },
-            { "name": "Mode view → Vérifier la génération du Service", "status": "failed" },
-            { "name": "Mode view → Vérifier la génération des thèmes pour les groupes", "status": "failed" },
-            { "name": "Mode view → Vérifier la génération des champs standard", "status": "failed" },
-            { "name": "Mode view → Vérifier la creation du master puzzle", "status": "failed" },
-            { "name": "Mode view → Vérifier la création de la vue detail par défaut", "status": "failed" },
-            { "name": "Mode view → Vérifier la création de la vue list par défaut", "status": "failed" },
-            { "name": "Mode view → Mise à jour", "status": "failed" },
-            { "name": "Mode view → Suppression", "status": "failed" },
-            { "name": "Mode liste actions → Création items pour test", "status": "failed" },
+            { "name": "Mode view → Création", "status": "passed" },
+            { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "passed" },
+            { "name": "Mode view → Vérifier la génération de la Table", "status": "passed" },
+            { "name": "Mode view → Vérifier la génération du Model", "status": "passed" },
+            { "name": "Mode view → Vérifier la génération du Service", "status": "passed" },
+            { "name": "Mode view → Vérifier la génération des thèmes pour les groupes", "status": "passed" },
+            { "name": "Mode view → Vérifier la génération des champs standard", "status": "passed" },
+            { "name": "Mode view → Vérifier la creation du master puzzle", "status": "passed" },
+            { "name": "Mode view → Vérifier la création de la vue detail par défaut", "status": "passed" },
+            { "name": "Mode view → Vérifier la création de la vue list par défaut", "status": "passed" },
+            { "name": "Mode view → Mise à jour", "status": "passed" },
+            { "name": "Mode view → Suppression", "status": "passed" },
+            { "name": "Mode liste actions → Création items pour test", "status": "passed" },
             { "name": "Mode liste actions → Ajouter", "status": "passed" },
-            { "name": "Mode liste actions → Row dropdown → Consulter", "status": "failed" },
-            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "failed" },
-            { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "failed" },
-            { "name": "Mode liste actions → Click row / Consulter", "status": "failed" },
-            { "name": "Mode liste actions → Bulk → Supprimer", "status": "failed" },
-            { "name": "Mode liste front data → création items", "status": "failed" },
+            { "name": "Mode liste actions → Row dropdown → Consulter", "status": "passed" },
+            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "passed" },
+            { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "passed" },
+            { "name": "Mode liste actions → Click row / Consulter", "status": "passed" },
+            { "name": "Mode liste actions → Bulk → Supprimer", "status": "passed" },
+            { "name": "Mode liste front data → création items", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Vérifier l'existence headers", "status": "passed" },
-            { "name": "Mode liste front data → HopTable → Passer à la page suivante", "status": "failed" },
-            { "name": "Mode liste front data → HopTable → Revenir à la page précédente", "status": "failed" },
-            { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "failed" },
-            { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "failed" },
-            { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ", "status": "failed" },
-            { "name": "Mode liste front data → HopTable → Recherche", "status": "failed" },
+            { "name": "Mode liste front data → HopTable → Passer à la page suivante", "status": "passed" },
+            { "name": "Mode liste front data → HopTable → Revenir à la page précédente", "status": "passed" },
+            { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "passed" },
+            { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "passed" },
+            { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ", "status": "passed" },
+            { "name": "Mode liste front data → HopTable → Recherche", "status": "passed" },
             { "name": "Mode liste front data → TitrePage", "status": "passed" },
             { "name": "Mode liste front data → Breadcrumbs", "status": "passed" },
             { "name": "Mode liste front data → Local Menu", "status": "passed" },
-            { "name": "Mode view front data → TitrePage", "status": "failed" },
-            { "name": "Mode view front data → Breadcrumbs", "status": "failed" },
+            { "name": "Mode view front data → TitrePage", "status": "passed" },
+            { "name": "Mode view front data → Breadcrumbs", "status": "passed" },
             { "name": "Mode view front data → LocalMenu", "status": "passed" },
             { "name": "Mode create front data → TitrePage", "status": "passed" },
             { "name": "Mode create front data → Breadcrumbs", "status": "passed" },
-            { "name": "Mode create front data → LocalMenu → Aucun LocalMenu", "status": "skipped" }
+            { "name": "Mode create front data → LocalMenu", "status": "passed" }
         ]
     },
     {
-        "name": "GroupCrudTest",
-        "total": 37,
-        "passed": 32,
-        "failed": 4,
-        "skipped": 1,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Structure\\Tests\\Groupe\\GroupCrudTest",
+        "total": 36,
+        "passed": 36,
+        "failed": 0,
+        "skipped": 0,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Fake entité", "status": "passed" },
             { "name": "Fake Source", "status": "passed" },
             { "name": "Fake create thème si n'existe pas", "status": "passed" },
             { "name": "Faker puzzle", "status": "passed" },
-            { "name": "Faker vue list", "status": "failed" },
+            { "name": "Faker vue list", "status": "passed" },
             { "name": "Faker condition", "status": "passed" },
-            { "name": "Mode view → Création", "status": "failed" },
-            { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "failed" },
-            { "name": "Mode view → Mise à jour", "status": "failed" },
+            { "name": "Mode view → Création", "status": "passed" },
+            { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "passed" },
+            { "name": "Mode view → Mise à jour", "status": "passed" },
             { "name": "Mode liste actions → Création items pour test", "status": "passed" },
             { "name": "Mode liste actions → Ajouter", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Consulter", "status": "passed" },
-            { "name": "Mode liste actions → Row dropdown → Configurer", "status": "failed" },
+            { "name": "Mode liste actions → Row dropdown → Configurer", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Dupliquer", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "passed" },
             { "name": "Mode liste actions → Click row / List des entités", "status": "passed" },
@@ -1234,20 +1234,20 @@ export const data = [
             { "name": "Mode liste front data → HopTable → Naviguer vers une page spécifique", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Changer le nombre d'éléments par page", "status": "passed" },
             { "name": "Mode liste front data → HopTable → Trier les éléments en fonction du champ", "status": "passed" },
-            { "name": "Mode liste front data → HopTable → Recherche", "status": "failed" },
+            { "name": "Mode liste front data → HopTable → Recherche", "status": "passed" },
             { "name": "Mode liste front data → TitrePage", "status": "passed" },
             { "name": "Mode liste front data → Breadcrumbs", "status": "passed" },
             { "name": "Mode liste front data → Local Menu", "status": "passed" },
             { "name": "Mode create front data → TitrePage", "status": "passed" },
             { "name": "Mode create front data → Breadcrumbs", "status": "passed" },
-            { "name": "Mode create front data → LocalMenu → Aucun local menu", "status": "skipped" },
+            { "name": "Mode create front data → LocalMenu", "status": "passed" },
             { "name": "Mode edit front data → TitrePage", "status": "passed" },
             { "name": "Mode edit front data → Breadcrumbs", "status": "passed" },
             { "name": "Mode edit front data → LocalMenu", "status": "passed" }
         ]
     },
     {
-        "name": "ModuleCrudTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Structure\\Tests\\Module\\ModuleCrudTest",
         "total": 33,
         "passed": 7,
         "failed": 22,
@@ -1288,11 +1288,11 @@ export const data = [
         ]
     },
     {
-        "name": "PuzzleCrudTest",
-        "total": 32,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Structure\\Tests\\Puzzle\\PuzzleCrudTest",
+        "total": 33,
         "passed": 22,
         "failed": 7,
-        "skipped": 3,
+        "skipped": 4,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création", "status": "passed" },
@@ -1329,15 +1329,15 @@ export const data = [
         ]
     },
     {
-        "name": "RelationCrudTest",
-        "total": 32,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Structure\\Tests\\Relation\\RelationCrudTest",
+        "total": 33,
         "passed": 25,
-        "failed": 5,
-        "skipped": 2,
+        "failed": 4,
+        "skipped": 4,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création", "status": "passed" },
-            { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "passed" },
+            { "name": "Mode view → Vérifier la visibilité dans mode liste", "status": "failed" },
             { "name": "Mode view → Mise à jour", "status": "passed" },
             { "name": "Mode view → Suppression", "status": "passed" },
             { "name": "Mode liste actions → Faker items pour test", "status": "passed" },
@@ -1370,10 +1370,10 @@ export const data = [
         ]
     },
     {
-        "name": "SourceCrudTest",
-        "total": 28,
-        "passed": 27,
-        "failed": 1,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Structure\\Tests\\Source\\SourceCrudTest",
+        "total": 29,
+        "passed": 29,
+        "failed": 0,
         "skipped": 0,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
@@ -1384,7 +1384,7 @@ export const data = [
             { "name": "Mode liste actions → Création items pour test", "status": "passed" },
             { "name": "Mode liste actions → Ajouter", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Consulter", "status": "passed" },
-            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "failed" },
+            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "passed" },
             { "name": "Mode liste actions → Click row / Consulter", "status": "passed" },
             { "name": "Mode liste actions → Bulk → Supprimer", "status": "passed" },
@@ -1406,7 +1406,7 @@ export const data = [
         ]
     },
     {
-        "name": "ValeurCrudTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Structure\\Tests\\Valeur\\ValeurCrudTest",
         "total": 28,
         "passed": 22,
         "failed": 6,
@@ -1421,7 +1421,7 @@ export const data = [
             { "name": "Mode liste actions → Création items pour test", "status": "passed" },
             { "name": "Mode liste actions → Ajouter", "status": "passed" },
             { "name": "Mode liste actions → Row dropdown → Consulter", "status": "passed" },
-            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "passed" },
+            { "name": "Mode liste actions → Row dropdown → Modifier", "status": "failed" },
             { "name": "Mode liste actions → Row dropdown → Supprimer", "status": "passed" },
             { "name": "Mode liste actions → Click row / Consulter", "status": "passed" },
             { "name": "Mode liste actions → Bulk → Supprimer", "status": "passed" },
@@ -1442,10 +1442,10 @@ export const data = [
         ]
     },
     {
-        "name": "TemplateBuilderTest",
-        "total": 8,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Template\\Tests\\TemplateBuilderTest",
+        "total": 9,
         "passed": 1,
-        "failed": 7,
+        "failed": 6,
         "skipped": 2,
         "tests": [
             { "name": "Création d'un template pour le test", "status": "failed" },
@@ -1461,11 +1461,11 @@ export const data = [
         ]
     },
     {
-        "name": "TemplateMailArchiveTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Template\\Tests\\TemplateMailArchiveTest",
         "total": 29,
-        "passed": 2,
-        "failed": 25,
-        "skipped": 2,
+        "passed": 1,
+        "failed": 27,
+        "skipped": 1,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Création", "status": "failed" },
@@ -1499,11 +1499,11 @@ export const data = [
         ]
     },
     {
-        "name": "TemplateMailCrudTest",
-        "total": 33,
-        "passed": 4,
-        "failed": 28,
-        "skipped": 2,
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Template\Tests\\TemplateMailCrudTest",
+        "total": 34,
+        "passed": 3,
+        "failed": 30,
+        "skipped": 1,
         "tests": [
             { "name": "authentification du session sur le navigateur", "status": "passed" },
             { "name": "Mode view → Fake Expéditeur", "status": "passed" },
@@ -1542,7 +1542,7 @@ export const data = [
         ]
     },
     {
-        "name": "TemplateMailModelsTest",
+        "name": "App\\HopFramework\\CoreApplication\\Modules\\Template\\Tests\\TemplateMailModelsTest",
         "total": 1,
         "passed": 1,
         "failed": 0,
