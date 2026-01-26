@@ -1,16 +1,44 @@
-import React, { useState } from 'react';
-import { Download, FileText, AlertCircle, CheckCircle } from 'lucide-react';
+import { useState } from 'react';
+import { Download, CheckCircle } from 'lucide-react';
 import reportData from './reportData';
 
 const BugReportGenerator = () => {
   const [isGenerating, setIsGenerating] = useState(false);
 
-  const generatePDF = () => {
+  const generatePDF = async () => {
     setIsGenerating(true);
-    setTimeout(() => {
+    try {
+      const container = document.querySelector('.print-container');
+      if (!container) throw new Error('Report container not found');
+
+      // Clone container and remove any elements marked .no-print
+      const clone = container.cloneNode(true);
+      clone.querySelectorAll && clone.querySelectorAll('.no-print').forEach(n => n.remove());
+
+      // Wrap clone in a temporary element to ensure a proper root
+      const wrapper = document.createElement('div');
+      wrapper.style.background = '#ffffff';
+      wrapper.appendChild(clone);
+
+      const html2pdfModule = await import('html2pdf.js');
+      const html2pdf = html2pdfModule.default || html2pdfModule;
+
+      const filename = `bug-report-${new Date().toISOString().slice(0,10)}.pdf`;
+      const opt = {
+        margin: 10,
+        filename,
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2, useCORS: true },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+
+      await html2pdf().set(opt).from(wrapper).save();
+    } catch (err) {
+      console.error('PDF generation failed, falling back to print()', err);
       window.print();
+    } finally {
       setIsGenerating(false);
-    }, 100);
+    }
   };
 
   const currentDate = new Date().toLocaleDateString('fr-FR', {
@@ -94,12 +122,16 @@ const BugReportGenerator = () => {
                   {/* Reason(s) */}
                   {(item.reason || item.reasons) && (
                     <div className="ml-9 bg-white border-l-4 border-blue-500 p-4 rounded">
-                      <p className="text-blue-600 font-semibold text-sm mb-1">RAISON</p>
-                      {item.reasons.map((r, ridx) => (
-                          <p key={ridx} className="text-gray-700 text-sm">
+                      <p className="text-blue-600 font-semibold text-sm mb-2">RAISON</p>
+                      {item.reasons ? (
+                        item.reasons.map((r, ridx) => (
+                          <p key={ridx} className="text-gray-700 text-sm mb-2">
                             {r}
                           </p>
-                        ))}
+                        ))
+                      ) : (
+                        <p className="text-gray-700 text-sm">{item.reason}</p>
+                      )}
                     </div>
                   )}
 
@@ -123,11 +155,6 @@ const BugReportGenerator = () => {
               ))}
             </div>
           ))}
-
-          {/* Footer */}
-          <div className="mt-12 pt-6 border-t-2 border-gray-200 text-center text-gray-400 text-sm">
-            Document confidentiel - Usage interne uniquement
-          </div>
         </div>
       </div>
     </div>
