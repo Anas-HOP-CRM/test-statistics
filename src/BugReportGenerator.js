@@ -15,9 +15,14 @@ const BugReportGenerator = () => {
       const clone = container.cloneNode(true);
       clone.querySelectorAll && clone.querySelectorAll('.no-print').forEach(n => n.remove());
 
+      // Reduce padding/spacing that can cause an extra blank PDF page
+      clone.style.padding = '0';
+      clone.style.boxShadow = 'none';
+
       // Wrap clone in a temporary element to ensure a proper root
       const wrapper = document.createElement('div');
       wrapper.style.background = '#ffffff';
+      wrapper.style.padding = '0';
       wrapper.appendChild(clone);
 
       const html2pdfModule = await import('html2pdf.js');
@@ -25,11 +30,12 @@ const BugReportGenerator = () => {
 
       const filename = `bug-report-${new Date().toISOString().slice(0,10)}.pdf`;
       const opt = {
-        margin: 10,
+        margin: 8,
         filename,
         image: { type: 'jpeg', quality: 0.98 },
         html2canvas: { scale: 2, useCORS: true },
-        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['css', 'legacy'] }
       };
 
       await html2pdf().set(opt).from(wrapper).save();
